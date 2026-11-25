@@ -5,6 +5,8 @@ CFLAGS = -Wall -Werror -Wextra
 SRC =   ft_printf.c\
 		ft_printcharc.c\
 		test.c\
+		ft_printstr.c\
+		ft_printnbr.c\
 
 OBJ = $(SRC:.c=.o)
 all: $(NAME)

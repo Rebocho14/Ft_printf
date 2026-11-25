@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:45:08 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/20 19:02:09 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/25 12:07:12 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,16 +28,16 @@ int ft_putstr(char *s)
         write(1, &s[i++], 1);
     return (i);
 }
-int main()
-{
-    char c = 'U';
-    char *str = "UGA BUGA";
-    int count;
+// int main()
+// {
+//     char c = 'U';
+//     char *str = "UGA BUGA";
+//     int count;
 
-    count = ft_putchar(c);
-    count = ft_putchar(c);
-    printf("%d\n", count);
+//     count = ft_putchar(c);
+//     count = ft_putchar(c);
+//     printf("%d\n", count);
 
-    count = ft_putstr(str);
-    printf(" %d\n", count);
-}
+//     count = ft_putstr(str);
+//     printf(" %d\n", count);
+// }
