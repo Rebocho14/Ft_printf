@@ -6,18 +6,18 @@
 /*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:45:08 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/25 12:07:12 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/25 13:17:56 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putchar(char c)
+int ft_printchar(char c)
 {
     write(1, &c, 1);
     return (1);
 }
-int ft_putstr(char *s)
+int ft_printstr(char *s)
 {
     int i;
 
