@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 23:29:59 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/25 20:10:57 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/26 14:15:19 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,43 @@
 
 int ft_printnbr(int n)
 {
-    char *str;
-    int count;
+	long	nb;
+	int	count;
+	nb = n;
 
-    str = ft_itoa(n);
-    if (!str)
-        return (0);
-    count = ft_printstr(str);
-    free(str);
-    return (count);
+	count = 0;
+	if (nb < 0)
+	{
+		count++;
+		write(1, "-", 1);
+		nb = -nb;
+	}
+	if (nb >= 0 && nb <= 9)
+		ft_putchar_fd((nb + '0'), 1);
+	if (nb >= 10)
+	{
+		count++;
+		ft_printnbr(nb / 10);
+		ft_printnbr(nb % 10);
+	}
+	return (count);
 }
 int ft_printnbrunsigned(unsigned int n)
 {
-    char *str; 
-    unsigned int count;
-    str = ft_itoa(n);
-    if (!str)
-        return (0);
-    count = ft_printstr(str);
-    free(str);
-    return (count);
+	long	nb;
+	int	count;
+
+	count = 0;
+	nb = n;
+	if (nb >= 0 && nb <= 9)
+		ft_putchar_fd((nb + '0'), 1);
+	if (nb >= 10)
+	{
+		count++;
+		ft_printnbr(nb / 10);
+		ft_printnbr(nb % 10);
+	}
+	return (count);
 }
 // int main()
 // {

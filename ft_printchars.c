@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printchars.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:45:08 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/25 13:17:56 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/26 10:18:14 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int ft_printchar(char c)
 {
     write(1, &c, 1);
-    return (1);
+    return (-1);
 }
 int ft_printstr(char *s)
 {

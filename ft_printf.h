@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:49:11 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/25 13:18:43 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/26 15:08:26 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,7 @@ int ft_printstr(char *s);
 int ft_printnbr(int n);
 int ft_printnbrunsigned(unsigned int n);
 int ft_printf(const char *format, ...);
+int	ft_print_hexa(unsigned long nb, char upper);
+int	ft_print_ptr(void *ptr);
     
 #endif
