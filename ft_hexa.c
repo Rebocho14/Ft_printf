@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_hexa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 21:39:44 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/27 11:25:45 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/27 12:18:52 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ int	ft_print_ptr(void *ptr)
 	count += ft_print_hexa((unsigned long)ptr, 0);
 	return (count);
 }
+
 // int main()
 // {
 // 	int d = 10;

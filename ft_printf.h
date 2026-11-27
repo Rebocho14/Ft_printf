@@ -3,20 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:49:11 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/27 11:05:43 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/27 12:17:13 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include <stdio.h>
 # include <unistd.h>
 # include <stdarg.h>
-# include "libft/libft.h"
 
 int	ft_printchar(char c);
 int	ft_printstr(char *s);

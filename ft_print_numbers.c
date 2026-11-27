@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 23:29:59 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/27 11:25:17 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/27 12:19:04 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,17 +47,3 @@ int	ft_printnbrunsigned(unsigned int n)
 	count++;
 	return (count);
 }
-// int main()
-// {
-//     int num = -12345;
-//     unsigned int unum = 67890;
-//     int count;
-
-//     count = ft_printnbr(num);
-//     printf("Printed %d characters for signed number.\n", count);
-//     ft_printf("print unsigned number: %u\n", unum);
-//     count = ft_printnbrunsigned(unum);
-//     printf("Printed %d characters for unsigned number.\n", count);
-
-//     return 0;
-// }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 23:23:23 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/27 11:16:01 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/27 12:15:51 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,8 +68,9 @@ int	ft_printf(const char *formats, ...)
 }
 // int main()
 // {
-//  ft_printf("testando %c, %s, %d, %i, %u, %x, %X, %p,
-// %%\n", 'A', "Hello", -101, 42, 42, 255, 255, NULL);
-//  int temp = ft_printf("%i", -101);
-//  printf("ft_printf returned: %d\n", temp);
+//  int temp =  ft_printf("%c, %s, %d, %i, %u, %x, %X, %p,
+//	 %%\n", 'A', "ugabuga", -101, 42, 42, 255, 255, NULL);
+//  int temp2 =  printf("%c, %s, %d, %i, %u, %x, %X, %p, 
+//	%%\n", 'A', "ugabuga", -101, 42, 42, 255, 255, NULL);
+//  printf("%d\n%d", temp, temp2);
 // }
