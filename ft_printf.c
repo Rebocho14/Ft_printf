@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 23:23:23 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/27 12:49:03 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/27 15:22:06 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ int	ft_formats(char s, va_list *list)
 		i += ft_print_hexa(va_arg(*list, unsigned int), s);
 	else if (s == 'p')
 		i += ft_print_ptr(va_arg(*list, void *));
+	else if (s == 'a')
+		return (ft_printstr("hello"));
 	else
 	{
 		i += ft_printchar('%');
@@ -69,8 +71,10 @@ int	ft_printf(const char *formats, ...)
 //#include <stdio.h>
 //int main()
 //	{
-//	int temp =  ft_printf("%X, %p, %%%\n", 255, NULL);
-//	int temp2 =  printf("%X, %p, %%\n", 255, NULL);
-//	printf("%d\n%d\n", temp, temp2);
+//		int i = 23;
+//		int *ptr = &i;
+//	ft_printf("%p", ptr);
+//	//int temp2 =  printf("%X, %p, %%\n", 255, NULL);
+//	//printf("%d\n%d\n", temp, temp2);
 //	//ft_printf("%d\n%d", temp, temp2);
 //	}

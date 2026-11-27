@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 21:39:44 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/27 12:42:15 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/27 15:24:27 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int	ft_print_ptr(void *ptr)
 	if (!ptr)
 		return (ft_printstr("(nil)"));
 	count += ft_printstr("0x");
-	count += ft_print_hexa((unsigned long)ptr, 0);
+	count += ft_print_hexa((unsigned long)ptr, 'x');
 	return (count);
 }
 
