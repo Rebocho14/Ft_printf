@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 23:23:23 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/27 12:28:55 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/27 12:49:03 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,3 +66,11 @@ int	ft_printf(const char *formats, ...)
 	va_end(list);
 	return (count);
 }
+//#include <stdio.h>
+//int main()
+//	{
+//	int temp =  ft_printf("%X, %p, %%%\n", 255, NULL);
+//	int temp2 =  printf("%X, %p, %%\n", 255, NULL);
+//	printf("%d\n%d\n", temp, temp2);
+//	//ft_printf("%d\n%d", temp, temp2);
+//	}

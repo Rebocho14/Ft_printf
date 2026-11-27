@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 21:39:44 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/27 12:18:52 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/27 12:42:15 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_print_hexa(unsigned long nb, char upper)
 	{
 		if (upper == 'X')
 			i += ft_printchar(base2[nb]);
-		else
+		else if (upper == 'x')
 			i += ft_printchar(base[nb]);
 	}
 	return (i);
