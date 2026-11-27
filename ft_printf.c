@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 23:23:23 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/27 12:15:51 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/27 12:28:55 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,11 +66,3 @@ int	ft_printf(const char *formats, ...)
 	va_end(list);
 	return (count);
 }
-// int main()
-// {
-//  int temp =  ft_printf("%c, %s, %d, %i, %u, %x, %X, %p,
-//	 %%\n", 'A', "ugabuga", -101, 42, 42, 255, 255, NULL);
-//  int temp2 =  printf("%c, %s, %d, %i, %u, %x, %X, %p, 
-//	%%\n", 'A', "ugabuga", -101, 42, 42, 255, 255, NULL);
-//  printf("%d\n%d", temp, temp2);
-// }

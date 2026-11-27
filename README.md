@@ -29,15 +29,6 @@ It returns the number of characters printed, like the original `printf`.
 | `%X`      | Unsigned hexadecimal (uppercase)             |
 | `%%`      | Literal percent sign                         |
 
-<!-- If you did the bonus, add the flags/width/precision you support here. -->
-
-### Design overview
-
-<!-- Explain in your own words how your code is organised. Suggestions:
-- How the format string is parsed (one pass, character by character).
-- How each conversion is dispatched to its own function.
-- How the printed-character count is kept and returned.
-- How you handle edge cases (NULL strings, NULL pointers, INT_MIN, 0 in hex...). -->
 
 ## Instructions
 
@@ -58,22 +49,18 @@ It returns the number of characters printed, like the original `printf`.
 Include the header and link the library when compiling your program:
 
     #include "ft_printf.h"
-
-    int main(void)
-    {
-        ft_printf("Hello %s, you are %d years old!\n", "world", 42);
-        return (0);
-    }
-
-    cc main.c -L. -lftprintf -o test
+	int main()
+		{
+		int temp =  ft_printf("%c, %s, %d, %i, %u, %x, %X, %p,%%\n", 'A', "ugabuga", -101, 42, 42, 255, 255, NULL);
+		int temp2 =  printf("%c, %s, %d, %i, %u, %x, %X, %p, %%\n", 'A', "ugabuga", -101, 42, 42, 255, 255, NULL);
+		printf("%d\n%d", temp, temp2);
+		ft_printf("%d\n%d", temp, temp2);
+		}
 
 ## Resources
 
 - `man 3 printf`, `man 3 stdarg`
-- <!-- Add the articles, tutorials and docs you actually used -->
 
 ### Use of AI
 
-<!-- Be honest and specific: which tasks AI helped with (e.g. understanding
-variadic arguments, reviewing the README) and which parts of the code you
-wrote and understood yourself. -->
+This README was drafted by AI and edited by me 
