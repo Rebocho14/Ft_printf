@@ -3,30 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printchars.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:45:08 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/26 10:18:14 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/27 11:04:23 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_printchar(char c)
+int	ft_printchar(char c)
 {
-    write(1, &c, 1);
-    return (-1);
+	return (write(1, &c, 1));
 }
-int ft_printstr(char *s)
-{
-    int i;
 
-    if (!s)
-        return (write(1, "(null)", 6));
-    i = 0;
-    while (s[i])
-        write(1, &s[i++], 1);
-    return (i);
+int	ft_printstr(char *s)
+{
+	int	i;
+
+	if (!s)
+		return (write(1, "(null)", 6));
+	i = 0;
+	while (s[i])
+	{
+		ft_printchar(s[i]);
+		i++;
+	}
+	return (i);
 }
 // int main()
 // {

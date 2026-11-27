@@ -6,7 +6,8 @@ LIBFT     = $(LIBFT_DIR)/libft.a
 
 SRC       = ft_printf.c \
             ft_printchars.c \
-            ft_print_numbers.c
+            ft_print_numbers.c \
+			ft_hexa.c
 OBJ       = $(SRC:.c=.o)
 
 all: $(NAME)

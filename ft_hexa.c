@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_hexa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 21:39:44 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/26 15:08:13 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/27 11:02:23 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
 int	ft_print_hexa(unsigned long nb, char upper)
 {
 	char			*base;
@@ -38,26 +39,27 @@ int	ft_print_hexa(unsigned long nb, char upper)
 int	ft_print_ptr(void *ptr)
 {
 	int	count;
+
 	count = 0;
 	if (!ptr)
-		return (ft_printstr("nil"));
+		return (ft_printstr("(nil)"));
 	count += ft_printstr("0x");
-	count += ft_print_hexa((unsigned long)ptr, 'x');
-	return (count);	
+	count += ft_print_hexa((unsigned long)ptr, 0);
+	return (count);
 }
-int main()
-{
-	int d = 10;
-	int *ptr = &d;
-	char *str;
-	printf("%p\n", str);
-	//ft_printf("%x", d);
-	ft_printf("%p", str);
-	printf("\n");
-	ft_print_ptr((char *) str);
-	printf("\n");
-	printf("original %p\n", ptr);
-	ft_printf("meu %p", ptr);
-	printf("\n");
-	ft_print_ptr((char *) ptr);
-}
+// int main()
+// {
+// 	int d = 10;
+// 	int *ptr = &d;
+// 	char *str;
+// 	printf("%p\n", str);
+// 	//ft_printf("%x", d);
+// 	ft_printf("%p", str);
+// 	printf("\n");
+// 	ft_print_ptr((char *) str);
+// 	printf("\n");
+// 	printf("original %p\n", ptr);
+// 	ft_printf("meu %p", ptr);
+// 	printf("\n");
+// 	ft_print_ptr((char *) ptr);
+// }
