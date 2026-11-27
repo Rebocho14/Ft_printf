@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:45:08 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/27 11:04:23 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/27 11:13:55 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_printstr(char *s)
 	i = 0;
 	while (s[i])
 	{
-		ft_printchar(s[i]);
+		write(1, &s[i], 1);
 		i++;
 	}
 	return (i);

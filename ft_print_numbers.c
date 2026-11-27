@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 23:29:59 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/27 11:01:13 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/27 11:25:17 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_printnbr(int n)
 	if (num < 0)
 	{
 		count++;
-		write (1, "-", 1);
+		ft_printchar('-');
 		num = -num;
 	}
 	if (num >= 10)
